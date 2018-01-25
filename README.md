@@ -12,14 +12,32 @@ What things you need to install the software and how to install them
 ```
 PHPStorm
 XAMPP
+GIT
 ```
 
 ### Installing
 
-You need a Git
+Generate SSH in GIT
 
 ```
-Then do a pull
+sh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
+Enter passphrase
+```
+Adding your SSH key to the ssh-agent
+
+Ensure the ssh-agent is running
+```
+eval $(ssh-agent -s)
+```
+Add your SSH private key to the ssh-agent.
+```
+ssh-add ~/.ssh/id_rsa
+```
+Copy the SSH key to your clipboard
+```
+clip < ~/.ssh/id_rsa.pub
+Github > Setting > SSH
 ```
 
 ## Deployment
