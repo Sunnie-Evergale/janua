@@ -22,48 +22,50 @@ echo "PHP storm HTML5: ! then Tab <br/>";
 
 echo "<h1>Variable logic</h1>";
 
-$a=10;
-$b=20;
-$result=0;
+$a = 10;
+$b = 20;
+$result = 0;
 
 echo "<h1>if{} else{} elseif{}</h1>";
-if ($a>$b){
+if ($a > $b) {
     echo "A is larger than <BR/>";
-}
-else{
+} else {
     echo "B is huge.<BR/>";
 }
 
-$result=$a+$b;
+$result = $a + $b;
 echo "Result $result<BR/>";
 echo "Result A: {$a}<BR/>";
 echo "<h1>forloop();</h1>";
 
-for ($a=0;$a<=2;$a++){
+for ($a = 0; $a <= 2; $a++) {
     echo "Result A [$a]: {$a}<BR/>";
 
 }
 
 echo "<h1>Array</h1>";
-$bishounen =array("hollow" => "feelings",
+$bishounen = array("hollow" => "feelings",
     "teleportation" => "escape",
     "mindless" => "drone");
 
 
 echo "<h1>foreach(){</h1>";
-foreach ($bishounen as $otoko => $kimochi){
+foreach ($bishounen as $otoko => $kimochi) {
     $labelNew = ucwords($otoko);
-    echo "{$labelNew} ".ucwords($kimochi)."<br/>";
+    echo "{$labelNew} " . ucwords($kimochi) . "<br/>";
 }
 
 echo "<br/>";
 //Functions
 echo "<h1>Functions</h1>";
 
-function SAY_HELLO(){
+function SAY_HELLO()
+{
     echo "Say hello";
 }
-function SAY_HELLO_TO($word){
+
+function SAY_HELLO_TO($word)
+{
     echo "Hi {$word}!";
 }
 
