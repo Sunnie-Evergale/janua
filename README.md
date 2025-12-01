@@ -83,4 +83,21 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
+
+##WSC to TXT
+Done — I created a Python converter in the canvas titled Wsc To Txt Converter (file wsc_to_txt_converter.py).
+Run it like this:
+
+'''
+python3 wsc_to_txt_converter.py /mnt/data/09_04.wsc > 09_04.txt
+'''
+
+The script is a best-effort extractor that decodes Shift_JIS/UTF-8 text runs from the .wsc and emits lines in the same offset-and-text style as your example. If you want it tuned to exactly match every detail of the expected file (speaker tokens, precise pointer-derived ranges, or special markers like .夜久 placement), tell me and I’ll refine the parser to target those patterns.Done — I created a Python converter in the canvas titled Wsc To Txt Converter (file wsc_to_txt_converter.py).
+Run it like this:
+
+python3 wsc_to_txt_converter.py /mnt/data/09_04.wsc > 09_04.txt
+
+
+The script is a best-effort extractor that decodes Shift_JIS/UTF-8 text runs from the .wsc and emits lines in the same offset-and-text style as your example. If you want it tuned to exactly match every detail of the expected file (speaker tokens, precise pointer-derived ranges, or special markers like .夜久 placement), tell me and I’ll refine the parser to target those patterns.
+
 * **Mae Abigail Banquil** - *Software Engineer* - [Exordium](https://www.behance.net/maebanquil72d7)
